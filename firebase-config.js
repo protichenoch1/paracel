@@ -1,12 +1,12 @@
 // Replace every value below with the Firebase web-app configuration from:
 // Firebase console → Project settings → Your apps → Web app → Config.
 export const firebaseConfig = {
-  apiKey: "PASTE_YOUR_API_KEY",
-  authDomain: "PASTE_YOUR_AUTH_DOMAIN",
-  projectId: "PASTE_YOUR_PROJECT_ID",
-  storageBucket: "PASTE_YOUR_STORAGE_BUCKET",
-  messagingSenderId: "PASTE_YOUR_MESSAGING_SENDER_ID",
-  appId: "PASTE_YOUR_APP_ID"
+  apiKey: "AIzaSyBhCIhMd5JiVZsnzuVPn-KyXhALXEkNtzA",
+  authDomain: "borderlesske.firebaseapp.com",
+  projectId: "borderlesske",
+  storageBucket: "borderlesske.firebasestorage.app",
+  messagingSenderId: "967107533059",
+  appId: "1:967107533059:web:c29428c037b688ac023136"
 };
 
 export const firebaseIsConfigured = !firebaseConfig.apiKey.startsWith("PASTE_");
