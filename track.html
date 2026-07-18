@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track application — Borderless</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .track-page{min-height:100vh;background:#f8f4ed}.track-header{max-width:940px;margin:auto;padding:28px 30px;display:flex;align-items:center;justify-content:space-between}.track-wrap{max-width:620px;margin:60px auto;padding:0 25px;text-align:center}.track-wrap h1{font-size:52px}.track-wrap>p{color:#6e7784;line-height:1.55;margin:20px auto 30px;max-width:470px}.track-card{background:#fff;text-align:left;padding:34px;box-shadow:0 14px 40px #1a2a4510}.track-card label{font-size:12px;font-weight:600;display:block;margin-bottom:7px}.track-card input{width:100%;border:1px solid #ddd8ce;padding:13px;font:inherit;outline-color:#f4572f;margin-bottom:16px}.track-result{display:none;margin-top:22px;padding:18px;background:#fff4df}.track-result b{display:block;font-size:17px;margin:5px 0}.track-result p{font-size:13px;margin:0;color:#58616e}.track-error{color:#a53925;background:#fbe5de}.track-card .button{width:100%}@media(max-width:600px){.track-wrap{margin:35px auto}.track-wrap h1{font-size:42px}.track-header{padding:22px 25px}}
+  </style>
+</head>
+<body class="track-page"><header class="track-header"><a class="brand" href="index.html">B<span>•</span>RDERLESS</a><a class="back-link" href="index.html">← Back to opportunities</a></header><main class="track-wrap"><h1>Track your<br /><em>application.</em></h1><p>Enter the tracking ID shown after you submit your application.</p><section class="track-card"><form id="trackingForm"><label for="trackingId">Application tracking ID</label><input id="trackingId" required placeholder="BL-2026-XXXXXXXX" autocomplete="off" /><button class="button button-orange" type="submit">Check status <span>→</span></button></form><div id="trackingResult" class="track-result"></div></section></main><script type="module" src="track.js"></script></body>
+</html>

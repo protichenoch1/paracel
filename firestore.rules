@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAdmin() {
+      return request.auth != null && request.auth.token.admin == true;
+    }
+
+    match /applications/{applicationId} {
+      // Candidates can submit applications but cannot read any applicant data.
+      allow create: if request.resource.data.status == 'Received';
+      allow read, update, delete: if isAdmin();
+    }
+
+    match /applicationTracking/{trackingId} {
+      // A tracking ID reveals only the role and application status — never PII.
+      allow create: if request.resource.data.status == 'Received';
+      allow get: if true;
+      allow list: if false;
+      allow update, delete: if isAdmin();
+    }
+  }
+}
