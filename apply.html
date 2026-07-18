@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Apply for a Borderless international opportunity." />
+  <title>Apply — Borderless</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .apply-page { min-height: 100vh; background: #f8f4ed; }
+    .apply-header { max-width: 1080px; margin: auto; padding: 28px 34px; display: flex; justify-content: space-between; align-items: center; }
+    .back-link { color: #182d4e; font-size: 14px; text-decoration: none; }
+    .application { max-width: 1080px; margin: 18px auto 80px; display: grid; grid-template-columns: .82fr 1.18fr; gap: 55px; padding: 0 34px; }
+    .application-intro { padding-top: 28px; } .application-intro p:not(.eyebrow) { color: #6e7784; font-size: 15px; line-height: 1.6; max-width: 330px; }
+    .role-details { margin-top: 35px; padding: 24px; background: #f7bd4a; } .role-details h3 { margin: 0 0 6px; font-size: 18px; } .role-details p { font-size: 13px; margin: 0; }
+    .role-details h4 { margin: 24px 0 10px; font: 500 11px "DM Mono", monospace; letter-spacing: .6px; } .role-details ul { padding-left: 18px; margin: 0; } .role-details li { font-size: 12px; margin: 7px 0; }
+    .application-form { background: #fff; padding: 38px; box-shadow: 0 14px 40px #1a2a4510; } .application-form h2 { font-size: 38px; }
+    .application-form > p { color: #6e7784; margin: 13px 0 30px; font-size: 14px; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; } .form-field { display: block; margin-bottom: 18px; } .form-field.full { grid-column: 1 / -1; }
+    .form-field label { display: block; margin-bottom: 7px; font-size: 12px; font-weight: 600; } .form-field input, .form-field select, .form-field textarea { width: 100%; font: inherit; font-size: 14px; border: 1px solid #ddd8ce; padding: 12px; outline-color: #f4572f; background: #fff; } .form-field textarea { min-height: 105px; resize: vertical; }
+    .consent { display: flex; gap: 9px; align-items: flex-start; color: #6e7784; font-size: 11px; line-height: 1.45; margin: 5px 0 23px; } .consent input { margin-top: 2px; accent-color: #f4572f; }
+    .success { display: none; margin-top: 18px; padding: 14px; color: #1d604a; background: #e4f4ea; font-size: 13px; }
+    @media(max-width:800px) { .apply-header { padding: 22px 25px; } .application { grid-template-columns: 1fr; padding: 0 25px; gap: 22px; } .application-intro { padding: 0; } .role-details { margin-top: 25px; } .application-form { padding: 25px; } .form-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body class="apply-page">
+  <header class="apply-header"><a class="brand" href="index.html">B<span>•</span>RDERLESS</a><a class="back-link" href="index.html">← Back to opportunities</a></header>
+  <main class="application">
+    <aside class="application-intro"><p class="eyebrow"><i></i> START YOUR NEXT CHAPTER</p><h1>Apply with<br /><em>confidence.</em></h1><p>Tell us a little about yourself. We’ll review your application against the role requirements and contact you about next steps.</p><div class="role-details" id="roleDetails"></div></aside>
+    <section class="application-form"><h2>Application</h2><p>Fields marked with * are required.</p><form id="applicationForm"><div class="form-grid"><div class="form-field full"><label for="role">Role you’re applying for *</label><select id="role" required></select></div><div class="form-field"><label for="name">Full name *</label><input id="name" required autocomplete="name" /></div><div class="form-field"><label for="email">Email address *</label><input id="email" type="email" required autocomplete="email" /></div><div class="form-field"><label for="location">Current location *</label><input id="location" required placeholder="City, country" /></div><div class="form-field"><label for="experience">Years of experience *</label><select id="experience" required><option value="">Select one</option><option>0–2 years</option><option>3–5 years</option><option>6–9 years</option><option>10+ years</option></select></div><div class="form-field full"><label for="portfolio">LinkedIn, portfolio, or CV link *</label><input id="portfolio" type="url" required placeholder="https://" /></div><div class="form-field full"><label for="message">Why are you a great fit? *</label><textarea id="message" required placeholder="Briefly highlight the experience that matches this role."></textarea></div></div><label class="consent"><input type="checkbox" required /> <span>I confirm that the information I’ve provided is accurate and I agree to Borderless reviewing my application.</span></label><button class="button button-orange" type="submit">Submit application <span>→</span></button><div class="success" id="successMessage">Application received — thank you. We’ll be in touch if your experience is a match.</div></form></section>
+  </main>
+  <script src="apply.js"></script>
+</body>
+</html>
