@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Borderless connects ambitious people with verified international opportunities." />
+  <title>Borderless — Find work that takes you places</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Borderless home">B<span>•</span>RDERLESS</a>
+    <nav aria-label="Main navigation">
+      <a href="#jobs">Find jobs</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#countries">Countries</a>
+    </nav>
+    <a class="header-cta" href="#jobs">Post a job <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><i></i> YOUR NEXT CHAPTER STARTS HERE</p>
+        <h1>Find work that<br /><em>takes you places.</em></h1>
+        <p class="hero-text">Discover verified jobs abroad, from companies that welcome global talent. The world is more open than you think.</p>
+        <a class="button button-dark" href="#jobs">Explore opportunities <span>→</span></a>
+        <div class="trust-row">
+          <div class="avatars" aria-hidden="true"><b>JM</b><b>KA</b><b>LS</b><b>+</b></div>
+          <p>Join <strong>18,000+</strong> people<br />building their life abroad</p>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="A professional traveler near a global map illustration">
+        <div class="sun"></div>
+        <div class="stamp stamp-1">WORK<br />ABROAD</div>
+        <div class="stamp stamp-2">VERIFIED<br />2024</div>
+        <div class="continent continent-1"></div><div class="continent continent-2"></div><div class="continent continent-3"></div>
+        <div class="globe-lines"></div>
+        <div class="traveler"><div class="head"></div><div class="hair"></div><div class="neck"></div><div class="shirt"></div><div class="bag"></div><div class="jacket"></div></div>
+        <div class="location-card"><span class="pin">✦</span><span><b>New opportunity</b><br />Amsterdam, Netherlands</span></div>
+      </div>
+    </section>
+
+    <section class="search-panel" aria-label="Search jobs">
+      <div class="search-field"><span>⌕</span><label>What</label><input id="keyword" type="search" placeholder="Job title, skill, or company" /></div>
+      <div class="search-field"><span>⌖</span><label>Where</label><select id="country"><option value="">Anywhere</option><option>Netherlands</option><option>Germany</option><option>Canada</option><option>Singapore</option><option>Australia</option><option>Spain</option></select></div>
+      <div class="search-field"><span>◫</span><label>Job type</label><select id="jobType"><option value="">All job types</option><option>Full-time</option><option>Contract</option><option>Hybrid</option></select></div>
+      <button id="searchButton" class="button button-orange">Search jobs <span>→</span></button>
+    </section>
+
+    <section class="numbers" aria-label="Borderless by the numbers">
+      <div><strong>12k<span>+</span></strong><p>active opportunities</p></div>
+      <div><strong>94</strong><p>countries hiring</p></div>
+      <div><strong>4.9<span>/5</span></strong><p>from global job seekers</p></div>
+      <div class="partner-logos"><p>TRUSTED BY GLOBAL TEAMS</p><span>northstar</span><span>qode</span><span>horizon</span></div>
+    </section>
+
+    <section class="jobs-section" id="jobs">
+      <div class="section-heading"><div><p class="eyebrow"><i></i> FRESH OPPORTUNITIES</p><h2>Roles worth<br /><em>moving for.</em></h2></div><a href="#jobs" class="text-link">View all jobs <span>→</span></a></div>
+      <div class="job-layout">
+        <aside class="filter-panel"><h3>Filter roles</h3><button class="filter active" data-filter="all">All opportunities <span>12,482</span></button><button class="filter" data-filter="Technology">Technology <span>3,108</span></button><button class="filter" data-filter="Design">Design <span>821</span></button><button class="filter" data-filter="Marketing">Marketing <span>1,407</span></button><button class="filter" data-filter="Business">Business <span>2,916</span></button><button class="filter" data-filter="Engineering">Engineering <span>1,972</span></button><div class="visa-note"><span>✦</span><p><b>Visa support</b><br />Only show roles with relocation or visa assistance.</p><label class="switch"><input id="visaToggle" type="checkbox" /><span></span></label></div></aside>
+        <div class="job-list" id="jobList"></div>
+      </div>
+    </section>
+
+    <section class="countries" id="countries"><div><p class="eyebrow"><i></i> GO WHERE YOU GROW</p><h2>New place.<br /><em>New perspective.</em></h2><p>Explore the cities building the next generation of global teams.</p><a href="#jobs" class="button button-dark">Explore destinations <span>→</span></a></div><div class="country-grid"><article><span class="flag">🇳🇱</span><b>Netherlands</b><small>1,284 roles</small></article><article><span class="flag">🇩🇪</span><b>Germany</b><small>1,106 roles</small></article><article><span class="flag">🇨🇦</span><b>Canada</b><small>976 roles</small></article><article><span class="flag">🇸🇬</span><b>Singapore</b><small>842 roles</small></article></div></section>
+
+    <section class="how-it-works" id="how-it-works"><p class="eyebrow"><i></i> A BETTER WAY TO GO GLOBAL</p><h2>Less guessing.<br /><em>More going.</em></h2><div class="steps"><article><span>01</span><h3>Find your fit</h3><p>Search roles matched to your skills, ambitions, and the places you want to call home.</p></article><article><span>02</span><h3>Apply with confidence</h3><p>Every opportunity is vetted for clarity, fair hiring, and support for international candidates.</p></article><article><span>03</span><h3>Make the move</h3><p>Access practical guides and a community that has already taken the leap.</p></article></div></section>
+
+    <section class="newsletter"><div><p class="eyebrow"><i></i> THE BORDERLESS EDIT</p><h2>Your passport to<br /><em>possibility.</em></h2></div><div><p>One thoughtful email every week: new international roles, practical moving advice, and stories from people who made the jump.</p><form id="newsletterForm"><input type="email" aria-label="Email address" placeholder="Your email address" required /><button class="button button-orange" type="submit">Keep me posted <span>→</span></button></form><small id="formMessage">No spam. Just a little more world in your inbox.</small></div></section>
+  </main>
+  <footer><a class="brand" href="#top">B<span>•</span>RDERLESS</a><p>© 2024 Borderless. Work without borders.</p><div><a href="#top">Instagram</a><a href="#top">LinkedIn</a><a href="#top">Help center</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
